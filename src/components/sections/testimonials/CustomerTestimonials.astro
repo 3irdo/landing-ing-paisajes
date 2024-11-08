@@ -1,0 +1,44 @@
+---
+import Container from "../../shared/Container.astro";
+import GradiantText from "../../shared/GradiantText.astro";
+import SubTitle2 from "../../shared/SubTitle2.astro";
+import Title2 from "../../shared/Title2.astro";
+import Title3 from "../../shared/Title3.astro";
+import Title from "../../shared/Title.astro";
+import Testimonial from "./components/Testimonial.astro";
+import { testimonialsSection } from "./data.ts";
+import Paragraph from "../../shared/Paragraph.astro";
+import Card from "../../shared/Card.astro";
+
+export interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<section id="about" class=`${className}`>
+  <Container
+    className="mx-auto flex flex-col items-center justify-center text-center"
+  >
+    <Title2>{testimonialsSection.title}</Title2>
+
+    <SubTitle2>
+      <GradiantText> {testimonialsSection.titleAbout}</GradiantText><br />
+    </SubTitle2>
+
+  </Container>
+  <Container className="flex flex-col items-center">
+    <div
+      class="mt-8 flex flex-col gap-8 midmd:flex-row text-heading-3 font-medium"
+    >
+      {
+        testimonialsSection.testimonials.map((testimonial) => {
+          return <Testimonial quote={testimonial.quote} />;
+        })
+      }
+    </div>
+  </Container>
+
+
+</section>

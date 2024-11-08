@@ -1,0 +1,49 @@
+---
+import Container from "../../shared/Container.astro";
+import CtaButton from "../../shared/CtaButton.astro";
+import GradiantText from "../../shared/GradiantText.astro";
+import LazyImage from "../../shared/LazyImage.astro";
+import Paragraph from "../../shared/Paragraph.astro";
+import SubTitle2 from "../../shared/SubTitle2.astro";
+import Title2 from "../../shared/Title2.astro";
+import { environmentalImpactSection } from "./data.ts";
+
+export interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<section id="about" class=`${className}`>
+  <Container>
+    <Title2>{environmentalImpactSection.title}</Title2>
+  </Container>
+  
+  <Container className="flex flex-col midmd:flex-row items-center gap-10 lg:gap-8">
+    {/* Contenedor de Texto Izquierdo */}
+    <div class="flex flex-col items-start text-left max-w-md w-full midmd:w-1/3">
+      <SubTitle2>{environmentalImpactSection.subheading1_1}</SubTitle2>
+      <Paragraph>{environmentalImpactSection.description1}</Paragraph>
+    </div>
+  
+    {/* Imagen Central */}
+    <div class="w-full midmd:w-1/3">
+      <LazyImage
+        src={environmentalImpactSection.visual}
+        alt="environmental impact"
+        width="700"
+        className="w-full h-full object-cover rounded-2xl"
+      />
+    </div>
+  
+    {/* Contenedor de Texto Derecho */}
+    <div class="flex flex-col items-start text-left max-w-md w-full midmd:w-1/3">
+      <SubTitle2>
+        <GradiantText>{environmentalImpactSection.subheading1_2}</GradiantText>
+      </SubTitle2>
+      <Paragraph>{environmentalImpactSection.description2}</Paragraph>
+    </div>
+  </Container>
+  
+</section>
