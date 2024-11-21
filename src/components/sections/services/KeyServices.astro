@@ -1,4 +1,5 @@
 ---
+// services section
 import Container from "../../shared/Container.astro";
 import Title2 from "../../shared/Title2.astro";
 import ServiceCard from "./components/ServiceCard.astro";
@@ -12,7 +13,7 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
-<section id="services" class=`${className}`>
+<section id="services" >
   <Container size="wide">
     <Title2>{servicesSectionData.title}</Title2>
    

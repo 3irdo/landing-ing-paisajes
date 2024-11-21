@@ -2,5 +2,5 @@
 
 /// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
-const WHATSAPPNUMBER = "573154771445"
+FORMTOKEN = "232c90b0-18f2-4ccf-9174-023c573656af"
 

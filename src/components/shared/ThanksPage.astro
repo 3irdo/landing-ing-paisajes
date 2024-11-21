@@ -1,0 +1,49 @@
+---
+import BtnLink from "./BtnLink.astro";
+import Paragraph from "./Paragraph.astro";
+import SubTitle from "./SubTitle.astro";
+
+
+
+---
+
+---
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Ingeniería & Paisajes</title>
+  </head>
+  <body>
+    <section id="thanksPage">
+      <div
+        class="flex flex-col items-center justify-center m-auto max-w-[450px] min-h-44 bg-primary rounded-[30px] p-10 items-center gap-4 text-left"
+      >
+    
+      <div class="flex items-center">
+        <SubTitle>Mensaje recibido </SubTitle> 
+    </div>
+        <Paragraph
+          >Gracias por comunicarte con Ingeniería & Paisajes, nuestro equipo te
+          contactará en breve.</Paragraph
+        >
+        <div>
+          <a href="#hero">
+            <BtnLink
+              text="Regresar al inicio"
+              href="#hero"
+              className="flex w-full sm:w-max text-lg text-heading-2"
+              variant="cta"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+

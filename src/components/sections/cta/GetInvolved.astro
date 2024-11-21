@@ -41,7 +41,7 @@ const { className } = Astro.props;
     <article>
 
       <div
-        class="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-8 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-blue-400 before:h-full max-md:before:hidden"
+        class="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-8 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-green-600 before:h-full max-md:before:hidden"
       >
         <div>
           <h2 class="text-gray-800 text-3xl font-extrabold">
@@ -52,42 +52,55 @@ const { className } = Astro.props;
             listo para colaborar con usted.
           </p>
 
-          <form>
+          <form action="https://api.staticforms.xyz/submit" method="post">
+            
+            <input type="hidden" name="accessKey" value="232c90b0-18f2-4ccf-9174-023c573656af">
+            <input type="hidden" name="replyTo" value="@">
+            
             <div class="space-y-4 mt-8">
               <input
+                required
                 type="text"
+                name="Nombre"
                 placeholder="Nombre completo"
                 class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
               />
 
               <div class="grid gap-6">
                 <input
+                  required
                   type="text"
-                  placeholder="City"
+                  name="Ciudad"
+                  placeholder="Ciudad"
                   class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
                 />
               </div>
               <input
                 type="number"
+                name="Contacto"
                 placeholder="Número de teléfono."
                 class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
               />
 
               <input
+                required
                 type="email"
+                name="Correo"
                 placeholder="Correo"
                 class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
               />
 
               <textarea
+                name="Mensaje"
                 placeholder="Escribe un mensaje"
                 class="px-2 pt-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
               ></textarea>
             </div>
 
             <button
-              type="button"
-              class="mt-8 flex items-center justify-center text-sm w-full rounded-md px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white"
+              type="submit"
+              value="submit"
+              class="mt-8 flex items-center justify-center text-sm w-full rounded-md px-6 py-3 bg-green-600 hover:bg-blue-700 text-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -142,8 +155,8 @@ const { className } = Astro.props;
             </li>
           </ul>
         </div>
-        <div class="z-10 relative h-full max-md:min-h-[350px]">
-          <img
+        <div class="z-10 relative h-full max-h-[450px]">
+          <img 
             src={qr.src}
             alt="whatsapp qr"
             class="left-0 top-0 h-full w-full rounded"
