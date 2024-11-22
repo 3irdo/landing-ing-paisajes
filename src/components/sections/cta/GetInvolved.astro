@@ -56,12 +56,13 @@ const { className } = Astro.props;
             
             <input type="hidden" name="accessKey" value="232c90b0-18f2-4ccf-9174-023c573656af">
             <input type="hidden" name="replyTo" value="@">
+            <input type="hidden" name="redirectTo" value="http://localhost:4321/thanksPage" />
             
             <div class="space-y-4 mt-8">
               <input
                 required
                 type="text"
-                name="Nombre"
+                name="name"
                 placeholder="Nombre completo"
                 class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
               />
@@ -70,14 +71,14 @@ const { className } = Astro.props;
                 <input
                   required
                   type="text"
-                  name="Ciudad"
+                  name="city"
                   placeholder="Ciudad"
                   class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
                 />
               </div>
               <input
                 type="number"
-                name="Contacto"
+                name="phone"
                 placeholder="Número de teléfono."
                 class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
               />
@@ -85,13 +86,13 @@ const { className } = Astro.props;
               <input
                 required
                 type="email"
-                name="Correo"
+                name="email"
                 placeholder="Correo"
                 class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
               />
 
               <textarea
-                name="Mensaje"
+                name="message"
                 placeholder="Escribe un mensaje"
                 class="px-2 pt-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
               ></textarea>

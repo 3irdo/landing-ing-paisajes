@@ -1,10 +1,43 @@
 ---
+import BtnLink from "../components/shared/BtnLink.astro";
+import Container from "../components/shared/Container.astro";
+import Paragraph from "../components/shared/Paragraph.astro";
+import SubTitle from "../components/shared/SubTitle.astro";
+import Title from "../components/shared/Title.astro";
 import Layout from "../layouts/Layout.astro";
-import ThanksMsg from "./thanksPage.astro";
+---
 
-<Layout title="Ingeniería & Paisajes">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mail send</title>
+  </head>
+  <body>
+    <section id="thanksPage" class="h-screen flex items-center justify-center bg-gray-100 bg-[url('/src/components/shared/leaf.webp')]">
+      <div
+        class="flex flex-col align-middle items-center justify-center m-auto max-w-[450px] min-h-44 bg-primary bg-opacity-75 rounded-[30px] p-10 items-center gap-4 text-white"
+      >
+          <Title>Mensaje recibido</Title>
 
-    <main class="flex flex-col gap-y-20 md:gap-y-40 overflow-hidden">
-        <ThanksMsg></ThanksMsg>
-    </main>
-</Layout>
+        <Paragraph
+          >Gracias por comunicarte con Ingeniería & Paisajes, nuestro equipo te
+          contactará en breve.</Paragraph
+        >
+
+        <div>
+          <a href="#hero">
+            <BtnLink
+              text="Regresar al inicio"
+              href="/"
+              className="flex w-full sm:w-max text-lg text-heading-2"
+              variant="cta"
+            />
+          </a>
+        </div>
+      </div>
+      </section>
+
+  </body>
+</html>
