@@ -54,7 +54,7 @@ const { className } = Astro.props;
 
           <form action="https://api.staticforms.xyz/submit" method="post">
             
-            <input type="hidden" name="accessKey" value="232c90b0-18f2-4ccf-9174-023c573656af">
+            <input type="hidden" name="accessKey" value={import.meta.env.PUBLIC_STATIC_FORMS_ACCESS_KEY}>
             <input type="hidden" name="replyTo" value="@">
             <input type="hidden" name="redirectTo" value="http://localhost:4321/thanksPage" />
             
