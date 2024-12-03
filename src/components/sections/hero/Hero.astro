@@ -24,9 +24,9 @@ export interface Props {
 
 ---
 
-<section class="relative w-full min-h-[80vh]" id="hero">
+<section class="w-full min-h-[80vh] mb-10" id="hero">
   <div class="w-full min-h-[80vh] pt-[100px] md:min-h-[400px]">
-    <div class="w-full min-h-[80vh] h-[550px] grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900">
+    <div class="w-full min-h-[80vh]  grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900">
       <div class="justify-center flex flex-col text-center md:ml-auto">
         <Title className="">
           {heroSection.headline1}
@@ -44,6 +44,7 @@ export interface Props {
           {heroSection.subheading3}
         </SubTitle>
       </div>
+      
       <div class="flex relative pt-10 md:p-0">
         <LazyImage
           src={heroImg}
