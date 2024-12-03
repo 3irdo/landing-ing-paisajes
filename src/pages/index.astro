@@ -8,13 +8,13 @@ import KeyServices from "../components/sections/services/KeyServices.astro";
 import LatestInnovations from "../components/sections/innovations/LatestInnovations.astro";
 import Layout from "../layouts/Layout.astro";
 import WhatsappButton from "../components/shared/WhatsappButton.astro";
-import wpIcon from "../components/shared/whatsapp-svgrepo-com.svg";
+import wpIcon from '../components/shared/whatsapp-svgrepo-com.svg'
 ---
 
 <Layout title="Ingeniería y Paisajes">
-  <main class="flex flex-col gap-y-20 md:gap-y-40 overflow-hidden">
+  <main class="flex flex-col gap-y-10 overflow-hidden">
     <!-- Hero Section: -->
-    <!-- Headline and subheading centered on the page. -->
+       <!-- Headline and subheading centered on the page. -->
     <Hero />
 
     <KeyServices />
@@ -30,6 +30,7 @@ import wpIcon from "../components/shared/whatsapp-svgrepo-com.svg";
     <!-- Emphasize how staying with your company means staying at the forefront of green energy. -->
 
     <!-- <CustomerTestimonials /> -->
+   
 
     <EnvironmentalImpact />
     <!-- Environmental Impact: -->
@@ -38,12 +39,16 @@ import wpIcon from "../components/shared/whatsapp-svgrepo-com.svg";
     <!-- Emphasize the role your company plays in promoting sustainability. -->
 
     <!-- <FeaturedProjects /> -->
+    
 
     <GetInvolved />
     <!-- Get Involved Section: -->
     <!-- Invite users to actively participate or learn more about sustainability. -->
     <!-- Provide information on community initiatives, events, or partnerships. -->
     <!-- Include a call-to-action for users to join your community or subscribe to updates. -->
-    <WhatsappButton btnImg={wpIcon} />
+    <WhatsappButton btnImg={wpIcon}/>
+
+    
+
   </main>
 </Layout>
