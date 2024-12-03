@@ -1,5 +1,5 @@
 import img1 from "./assets/garden.webp";
-import img2 from "./assets/arboles.webp";
+import img2 from "./assets/servicios-forestales.webp";
 // TODO
 import img3 from "./assets/ambiental.webp";
 
@@ -8,10 +8,10 @@ export const servicesSectionData = {
   title: "Nuestros servicios",
   subheading: {
     text1_1:
-      "Brindamos una amplia gama de servicios en ingeniería ambiental y paisajes -",
-    text1_2: "Nos especializamos en:",
+      "Brindamos una amplia gama de servicios en ingeniería ambiental, forestal y paisajística.",
     text2:
       "Cada proyecto es único y lo abordamos con precisión técnica y un profundo respeto por el medio ambiente.",
+      text1_2: "Nos especializamos en:",
   },
   services: [
     {

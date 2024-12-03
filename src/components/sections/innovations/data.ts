@@ -96,8 +96,8 @@ export const forestalesData = {
 
 export const ambientalesData = {
   subheading1_1:
-    "Transforma tu entorno con nuestros servicios de paisajismo de vanguardia.",
-  subheading1_2: " Servicios Ambientales",
+    "Impulsa el cambio con nuestras soluciones ambientales sostenibles y de ",
+  subheading1_2: "impacto duradero.",
   innovations: [
     {
       title: "PLANES DE MANEJO AMBIENTAL",
