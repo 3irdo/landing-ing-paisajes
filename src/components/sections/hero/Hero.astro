@@ -22,20 +22,16 @@ export interface Props {
   className?: string;
 } 
 
-const { className = "" } = Astro.props;
 ---
 
-<section class=`relative  ${className} w-full min-h-[80vh]` id="hero">
-  
-  <div class="w-full min-h-[80vh] pt-[100px]">
-    <div
-      class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
-    >
+<section class="relative w-full min-h-[80vh]" id="hero">
+  <div class="w-full min-h-[80vh] pt-[100px] md:min-h-[400px]">
+    <div class="w-full min-h-[80vh] h-[550px] grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900">
       <div class="justify-center flex flex-col text-center md:ml-auto">
         <Title className="">
           {heroSection.headline1}
-          <GradiantText
-            >{" " + heroSection.headline2}
+          <GradiantText>
+            {" " + heroSection.headline2}
             <br />
             {" " + heroSection.headline3}
           </GradiantText>{heroSection.headline4}
@@ -43,7 +39,8 @@ const { className = "" } = Astro.props;
         <SubTitle className=" mt-10 leading-9 italic">
           {heroSection.subheading1}
           <br />
-          {heroSection.subheading2}<br />
+          {heroSection.subheading2}
+          <br />
           {heroSection.subheading3}
         </SubTitle>
       </div>
