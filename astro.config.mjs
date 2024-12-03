@@ -7,5 +7,4 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: 'https://ingenieriaypaisajes.com',
   integrations: [tailwind(), react(), sitemap()],
-  // base: "ingenieria_paisajes"
-});
+  });
