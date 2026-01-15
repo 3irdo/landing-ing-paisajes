@@ -1,0 +1,22 @@
+La página está hecha con el framework astrobuild
+
+para iniciar el proyecto en desarrollo es necesario tener instalado node js, instalar astro.
+
+- ejecutar el comando npm i (instala las dependecias del proyecto)
+
+- ejecutar el comando npm start, que inicia el despliegue en entorno de desarrollo.
+
+- para producción (desplegar en un hosting) se ejecuta el comando npm run build y se puede subir dierectamente la carpeta dist al hosting. también se puede desplegar creando un repositorio en github y configurando cualquier hosting como netlify para que tenga acceso. 
+
+- hay variables de entorno para el formulario de contacto que está configurado con staticforms, así que tenerlo en cuenta para su funcionamiento.
+
+- en esta versión no están las redes sociales porque aún no tienen, pero las anchor ya están desarrolladas y comentadas en el layout de footer.
+
+- el sitio ya tiene sitemap, está indexado en google. 
+
+-el dominio tiene vigencia de un año hasta el 2 de diciembre.
+
+-dominio: ingenieriaypaisajes.org
+
+
+ 

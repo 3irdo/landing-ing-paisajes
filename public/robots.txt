@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /admin/
 Allow: /public/
-Sitemap: https://ingenieriaypaisajes.com/sitemap.xml
+Sitemap: https://ingenieriaypaisajes.org/sitemap.xml
